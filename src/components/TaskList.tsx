@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import _ from "lodash";
-
 
 import '../styles/tasklist.scss'
 
@@ -20,7 +18,7 @@ export function TaskList() {
     if (!newTaskTitle) return; 
 
     const newTask = {
-      id: _.uniqueId(),
+      id: Math.random(),
       title: newTaskTitle,
       isComplete: false,
     }
